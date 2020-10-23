@@ -10,8 +10,8 @@ AUDV1                    001a
 COLUBK                   0009              (R )
 COLUP0                   0006              (R )
 COLUP1                   0007                  
-COLUPF                   0008              (R )
-CTRLPF                   000a              (R )
+COLUPF                   0008                  
+CTRLPF                   000a                  
 CXBLPF                   0006                  
 CXCLR                    002c                  
 CXM0FB                   0004                  
@@ -40,16 +40,16 @@ INPT3                    000b
 INPT4                    000c                  
 INPT5                    000d                  
 INTIM                    0284                  
-LoadBitmap               f380              (R )
+LoadBitmap               f081              (R )
 NUSIZ0                   0004                  
 NUSIZ1                   0005                  
-Overscan                 f390                  
-P0Bitmap                 f3d5              (R )
-P0Color                  f3de              (R )
+Overscan                 f091                  
+P0Bitmap                 f0d6              (R )
+P0Color                  f0df              (R )
 P0Height                 0080              (R )
-PF0                      000d              (R )
-PF1                      000e              (R )
-PF2                      000f              (R )
+PF0                      000d                  
+PF1                      000e                  
+PF2                      000f                  
 PlayerYPos               0081              (R )
 REFP0                    000b                  
 REFP1                    000c                  
@@ -62,9 +62,8 @@ RESMP1                   0029
 RESP0                    0010                  
 RESP1                    0011                  
 RSYNC                    0003                  
-Scanline                 f376              (R )
-StartFrame               f01b              (R )
-StartFrame1              f316              (R )
+Scanline                 f077              (R )
+StartFrame               f017              (R )
 SWACNT                   0281                  
 SWBCNT                   0283                  
 SWCHA                    0280                  
