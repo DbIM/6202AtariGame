@@ -564,644 +564,649 @@
      76  f09b					      REPEND
      77  f09d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
      78  f09f					      REPEND
-     79  f09f
+     79  f09f							;
      80  f09f
-     81  f09f		       a2 20		      ldx	#%00100000
-     82  f0a1		       86 0d		      stx	PF0
-     83  f0a3		       a2 00		      ldx	#%00000000
-     84  f0a5		       86 0e		      stx	PF1
-     85  f0a7		       86 0f		      stx	PF2
-     86  f0a9					      REPEAT	7
-     87  f0a9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     86  f0a9					      REPEND
-     87  f0ab		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     86  f0ab					      REPEND
-     87  f0ad		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     86  f0ad					      REPEND
-     87  f0af		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     86  f0af					      REPEND
-     87  f0b1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     86  f0b1					      REPEND
-     87  f0b3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     86  f0b3					      REPEND
-     87  f0b5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     88  f0b7					      REPEND
-     89  f0b7
-     90  f0b7							; Set the PF0 to 1110 (LSB first) and PF1-PF2 as 1111 1111
-     91  f0b7		       a2 40		      ldx	#%01000000
-     92  f0b9		       86 0d		      stx	PF0
-     93  f0bb		       a2 00		      ldx	#%00000000
-     94  f0bd		       86 0e		      stx	PF1
-     95  f0bf		       86 0f		      stx	PF2
-     96  f0c1					      REPEAT	7
-     97  f0c1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     96  f0c1					      REPEND
-     97  f0c3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     96  f0c3					      REPEND
-     97  f0c5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     96  f0c5					      REPEND
-     97  f0c7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     96  f0c7					      REPEND
-     97  f0c9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     96  f0c9					      REPEND
-     97  f0cb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     96  f0cb					      REPEND
-     97  f0cd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-     98  f0cf					      REPEND
-     99  f0cf
-    100  f0cf		       a2 80		      ldx	#%10000000
-    101  f0d1		       86 0d		      stx	PF0
-    102  f0d3		       a2 00		      ldx	#%00000000
-    103  f0d5		       86 0e		      stx	PF1
-    104  f0d7		       86 0f		      stx	PF2
-    105  f0d9					      REPEAT	7
-    106  f0d9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    105  f0d9					      REPEND
-    106  f0db		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    105  f0db					      REPEND
-    106  f0dd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    105  f0dd					      REPEND
-    106  f0df		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    105  f0df					      REPEND
-    106  f0e1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    105  f0e1					      REPEND
-    106  f0e3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    105  f0e3					      REPEND
-    106  f0e5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    107  f0e7					      REPEND
-    108  f0e7
-    109  f0e7		       a2 00		      ldx	#%00000000
-    110  f0e9		       86 0d		      stx	PF0
-    111  f0eb		       a2 80		      ldx	#%10000000
-    112  f0ed		       86 0e		      stx	PF1
-    113  f0ef		       a2 00		      ldx	#%00000000
-    114  f0f1		       86 0f		      stx	PF2
-    115  f0f3					      REPEAT	7
-    116  f0f3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    115  f0f3					      REPEND
-    116  f0f5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    115  f0f5					      REPEND
-    116  f0f7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    115  f0f7					      REPEND
-    116  f0f9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    115  f0f9					      REPEND
-    116  f0fb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    115  f0fb					      REPEND
-    116  f0fd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    115  f0fd					      REPEND
-    116  f0ff		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    117  f101					      REPEND
-    118  f101
-    119  f101		       a2 00		      ldx	#%00000000
-    120  f103		       86 0d		      stx	PF0
-    121  f105		       a2 40		      ldx	#%01000000
-    122  f107		       86 0e		      stx	PF1
-    123  f109		       a2 00		      ldx	#%00000000
-    124  f10b		       86 0f		      stx	PF2
-    125  f10d					      REPEAT	7
-    126  f10d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    125  f10d					      REPEND
-    126  f10f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    125  f10f					      REPEND
-    126  f111		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    125  f111					      REPEND
-    126  f113		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    125  f113					      REPEND
-    126  f115		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    125  f115					      REPEND
-    126  f117		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    125  f117					      REPEND
-    126  f119		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    127  f11b					      REPEND
-    128  f11b
-    129  f11b		       a2 00		      ldx	#%00000000
-    130  f11d		       86 0d		      stx	PF0
-    131  f11f		       a2 20		      ldx	#%00100000
-    132  f121		       86 0e		      stx	PF1
-    133  f123		       a2 00		      ldx	#%00000000
-    134  f125		       86 0f		      stx	PF2
-    135  f127					      REPEAT	7
-    136  f127		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    135  f127					      REPEND
-    136  f129		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    135  f129					      REPEND
-    136  f12b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    135  f12b					      REPEND
-    136  f12d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    135  f12d					      REPEND
-    136  f12f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    135  f12f					      REPEND
-    136  f131		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    135  f131					      REPEND
-    136  f133		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    137  f135					      REPEND
-    138  f135
-    139  f135							; Set the next 164 lines only with PF0 third bit enabled
-    140  f135		       a2 00		      ldx	#%00000000
-    141  f137		       86 0d		      stx	PF0
-    142  f139		       a2 1f		      ldx	#%00011111
-    143  f13b		       86 0e		      stx	PF1
-    144  f13d		       a2 ff		      ldx	#%11111111
-    145  f13f		       86 0f		      stx	PF2
-    146  f141					      REPEAT	7
-    147  f141		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    146  f141					      REPEND
-    147  f143		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    146  f143					      REPEND
-    147  f145		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    146  f145					      REPEND
-    147  f147		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    146  f147					      REPEND
-    147  f149		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    146  f149					      REPEND
-    147  f14b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    146  f14b					      REPEND
-    147  f14d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    148  f14f					      REPEND
-    149  f14f
+     81  f09f
+     82  f09f		       a2 20		      ldx	#%00100000
+     83  f0a1		       86 0d		      stx	PF0
+     84  f0a3		       a2 00		      ldx	#%00000000
+     85  f0a5		       86 0e		      stx	PF1
+     86  f0a7		       86 0f		      stx	PF2
+     87  f0a9					      REPEAT	7
+     88  f0a9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     87  f0a9					      REPEND
+     88  f0ab		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     87  f0ab					      REPEND
+     88  f0ad		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     87  f0ad					      REPEND
+     88  f0af		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     87  f0af					      REPEND
+     88  f0b1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     87  f0b1					      REPEND
+     88  f0b3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     87  f0b3					      REPEND
+     88  f0b5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     89  f0b7					      REPEND
+     90  f0b7
+     91  f0b7							; Set the PF0 to 1110 (LSB first) and PF1-PF2 as 1111 1111
+     92  f0b7		       a2 40		      ldx	#%01000000
+     93  f0b9		       86 0d		      stx	PF0
+     94  f0bb		       a2 00		      ldx	#%00000000
+     95  f0bd		       86 0e		      stx	PF1
+     96  f0bf		       86 0f		      stx	PF2
+     97  f0c1					      REPEAT	7
+     98  f0c1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     97  f0c1					      REPEND
+     98  f0c3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     97  f0c3					      REPEND
+     98  f0c5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     97  f0c5					      REPEND
+     98  f0c7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     97  f0c7					      REPEND
+     98  f0c9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     97  f0c9					      REPEND
+     98  f0cb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     97  f0cb					      REPEND
+     98  f0cd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+     99  f0cf					      REPEND
+    100  f0cf
+    101  f0cf		       a2 80		      ldx	#%10000000
+    102  f0d1		       86 0d		      stx	PF0
+    103  f0d3		       a2 00		      ldx	#%00000000
+    104  f0d5		       86 0e		      stx	PF1
+    105  f0d7		       86 0f		      stx	PF2
+    106  f0d9					      REPEAT	7
+    107  f0d9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    106  f0d9					      REPEND
+    107  f0db		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    106  f0db					      REPEND
+    107  f0dd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    106  f0dd					      REPEND
+    107  f0df		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    106  f0df					      REPEND
+    107  f0e1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    106  f0e1					      REPEND
+    107  f0e3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    106  f0e3					      REPEND
+    107  f0e5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    108  f0e7					      REPEND
+    109  f0e7
+    110  f0e7		       a2 00		      ldx	#%00000000
+    111  f0e9		       86 0d		      stx	PF0
+    112  f0eb		       a2 80		      ldx	#%10000000
+    113  f0ed		       86 0e		      stx	PF1
+    114  f0ef		       a2 00		      ldx	#%00000000
+    115  f0f1		       86 0f		      stx	PF2
+    116  f0f3					      REPEAT	7
+    117  f0f3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    116  f0f3					      REPEND
+    117  f0f5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    116  f0f5					      REPEND
+    117  f0f7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    116  f0f7					      REPEND
+    117  f0f9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    116  f0f9					      REPEND
+    117  f0fb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    116  f0fb					      REPEND
+    117  f0fd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    116  f0fd					      REPEND
+    117  f0ff		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    118  f101					      REPEND
+    119  f101
+    120  f101		       a2 00		      ldx	#%00000000
+    121  f103		       86 0d		      stx	PF0
+    122  f105		       a2 40		      ldx	#%01000000
+    123  f107		       86 0e		      stx	PF1
+    124  f109		       a2 00		      ldx	#%00000000
+    125  f10b		       86 0f		      stx	PF2
+    126  f10d					      REPEAT	7
+    127  f10d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    126  f10d					      REPEND
+    127  f10f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    126  f10f					      REPEND
+    127  f111		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    126  f111					      REPEND
+    127  f113		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    126  f113					      REPEND
+    127  f115		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    126  f115					      REPEND
+    127  f117		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    126  f117					      REPEND
+    127  f119		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    128  f11b					      REPEND
+    129  f11b
+    130  f11b		       a2 00		      ldx	#%00000000
+    131  f11d		       86 0d		      stx	PF0
+    132  f11f		       a2 20		      ldx	#%00100000
+    133  f121		       86 0e		      stx	PF1
+    134  f123		       a2 00		      ldx	#%00000000
+    135  f125		       86 0f		      stx	PF2
+    136  f127					      REPEAT	7
+    137  f127		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    136  f127					      REPEND
+    137  f129		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    136  f129					      REPEND
+    137  f12b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    136  f12b					      REPEND
+    137  f12d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    136  f12d					      REPEND
+    137  f12f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    136  f12f					      REPEND
+    137  f131		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    136  f131					      REPEND
+    137  f133		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    138  f135					      REPEND
+    139  f135
+    140  f135							; Set the next 164 lines only with PF0 third bit enabled
+    141  f135		       a2 00		      ldx	#%00000000
+    142  f137		       86 0d		      stx	PF0
+    143  f139		       a2 1f		      ldx	#%00011111
+    144  f13b		       86 0e		      stx	PF1
+    145  f13d		       a2 ff		      ldx	#%11111111
+    146  f13f		       86 0f		      stx	PF2
+    147  f141					      REPEAT	7
+    148  f141		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    147  f141					      REPEND
+    148  f143		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    147  f143					      REPEND
+    148  f145		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    147  f145					      REPEND
+    148  f147		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    147  f147					      REPEND
+    148  f149		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    147  f149					      REPEND
+    148  f14b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    147  f14b					      REPEND
+    148  f14d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    149  f14f					      REPEND
     150  f14f
-    151  f14f		       a2 00		      ldx	#%00000000
-    152  f151		       86 0d		      stx	PF0
-    153  f153		       a2 10		      ldx	#%00010000
-    154  f155		       86 0e		      stx	PF1
-    155  f157		       a2 00		      ldx	#%00000000
-    156  f159		       86 0f		      stx	PF2
-    157  f15b					      REPEAT	21
-    158  f15b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f15b					      REPEND
-    158  f15d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f15d					      REPEND
-    158  f15f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f15f					      REPEND
-    158  f161		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f161					      REPEND
-    158  f163		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f163					      REPEND
-    158  f165		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f165					      REPEND
-    158  f167		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f167					      REPEND
-    158  f169		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f169					      REPEND
-    158  f16b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f16b					      REPEND
-    158  f16d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f16d					      REPEND
-    158  f16f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f16f					      REPEND
-    158  f171		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f171					      REPEND
-    158  f173		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f173					      REPEND
-    158  f175		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f175					      REPEND
-    158  f177		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f177					      REPEND
-    158  f179		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f179					      REPEND
-    158  f17b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f17b					      REPEND
-    158  f17d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f17d					      REPEND
-    158  f17f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f17f					      REPEND
-    158  f181		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    157  f181					      REPEND
-    158  f183		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    159  f185					      REPEND
-    160  f185
-    161  f185		       a2 00		      ldx	#%00000000
-    162  f187		       86 0d		      stx	PF0
-    163  f189		       a2 10		      ldx	#%00010000
-    164  f18b		       86 0e		      stx	PF1
-    165  f18d		       a2 f0		      ldx	#%11110000
-    166  f18f		       86 0f		      stx	PF2
-    167  f191					      REPEAT	7
-    168  f191		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    167  f191					      REPEND
-    168  f193		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    167  f193					      REPEND
-    168  f195		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    167  f195					      REPEND
-    168  f197		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    167  f197					      REPEND
-    168  f199		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    167  f199					      REPEND
-    168  f19b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    167  f19b					      REPEND
-    168  f19d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    169  f19f					      REPEND
-    170  f19f
+    151  f14f
+    152  f14f		       a2 00		      ldx	#%00000000
+    153  f151		       86 0d		      stx	PF0
+    154  f153		       a2 10		      ldx	#%00010000
+    155  f155		       86 0e		      stx	PF1
+    156  f157		       a2 00		      ldx	#%00000000
+    157  f159		       86 0f		      stx	PF2
+    158  f15b					      REPEAT	21
+    159  f15b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f15b					      REPEND
+    159  f15d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f15d					      REPEND
+    159  f15f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f15f					      REPEND
+    159  f161		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f161					      REPEND
+    159  f163		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f163					      REPEND
+    159  f165		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f165					      REPEND
+    159  f167		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f167					      REPEND
+    159  f169		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f169					      REPEND
+    159  f16b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f16b					      REPEND
+    159  f16d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f16d					      REPEND
+    159  f16f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f16f					      REPEND
+    159  f171		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f171					      REPEND
+    159  f173		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f173					      REPEND
+    159  f175		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f175					      REPEND
+    159  f177		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f177					      REPEND
+    159  f179		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f179					      REPEND
+    159  f17b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f17b					      REPEND
+    159  f17d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f17d					      REPEND
+    159  f17f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f17f					      REPEND
+    159  f181		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    158  f181					      REPEND
+    159  f183		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    160  f185					      REPEND
+    161  f185
+    162  f185		       a2 00		      ldx	#%00000000
+    163  f187		       86 0d		      stx	PF0
+    164  f189		       a2 10		      ldx	#%00010000
+    165  f18b		       86 0e		      stx	PF1
+    166  f18d		       a2 f0		      ldx	#%11110000
+    167  f18f		       86 0f		      stx	PF2
+    168  f191					      REPEAT	7
+    169  f191		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    168  f191					      REPEND
+    169  f193		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    168  f193					      REPEND
+    169  f195		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    168  f195					      REPEND
+    169  f197		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    168  f197					      REPEND
+    169  f199		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    168  f199					      REPEND
+    169  f19b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    168  f19b					      REPEND
+    169  f19d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    170  f19f					      REPEND
     171  f19f
-    172  f19f		       a2 00		      ldx	#%00000000
-    173  f1a1		       86 0d		      stx	PF0
-    174  f1a3		       a2 10		      ldx	#%00010000
-    175  f1a5		       86 0e		      stx	PF1
-    176  f1a7		       a2 10		      ldx	#%00010000
-    177  f1a9		       86 0f		      stx	PF2
-    178  f1ab					      REPEAT	56
-    179  f1ab		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1ab					      REPEND
-    179  f1ad		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1ad					      REPEND
-    179  f1af		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1af					      REPEND
-    179  f1b1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1b1					      REPEND
-    179  f1b3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1b3					      REPEND
-    179  f1b5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1b5					      REPEND
-    179  f1b7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1b7					      REPEND
-    179  f1b9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1b9					      REPEND
-    179  f1bb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1bb					      REPEND
-    179  f1bd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1bd					      REPEND
-    179  f1bf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1bf					      REPEND
-    179  f1c1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1c1					      REPEND
-    179  f1c3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1c3					      REPEND
-    179  f1c5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1c5					      REPEND
-    179  f1c7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1c7					      REPEND
-    179  f1c9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1c9					      REPEND
-    179  f1cb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1cb					      REPEND
-    179  f1cd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1cd					      REPEND
-    179  f1cf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1cf					      REPEND
-    179  f1d1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1d1					      REPEND
-    179  f1d3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1d3					      REPEND
-    179  f1d5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1d5					      REPEND
-    179  f1d7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1d7					      REPEND
-    179  f1d9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1d9					      REPEND
-    179  f1db		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1db					      REPEND
-    179  f1dd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1dd					      REPEND
-    179  f1df		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1df					      REPEND
-    179  f1e1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1e1					      REPEND
-    179  f1e3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1e3					      REPEND
-    179  f1e5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1e5					      REPEND
-    179  f1e7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1e7					      REPEND
-    179  f1e9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1e9					      REPEND
-    179  f1eb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1eb					      REPEND
-    179  f1ed		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1ed					      REPEND
-    179  f1ef		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1ef					      REPEND
-    179  f1f1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1f1					      REPEND
-    179  f1f3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1f3					      REPEND
-    179  f1f5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1f5					      REPEND
-    179  f1f7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1f7					      REPEND
-    179  f1f9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1f9					      REPEND
-    179  f1fb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1fb					      REPEND
-    179  f1fd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1fd					      REPEND
-    179  f1ff		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f1ff					      REPEND
-    179  f201		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f201					      REPEND
-    179  f203		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f203					      REPEND
-    179  f205		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f205					      REPEND
-    179  f207		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f207					      REPEND
-    179  f209		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f209					      REPEND
-    179  f20b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f20b					      REPEND
-    179  f20d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f20d					      REPEND
-    179  f20f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f20f					      REPEND
-    179  f211		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f211					      REPEND
-    179  f213		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f213					      REPEND
-    179  f215		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f215					      REPEND
-    179  f217		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    178  f217					      REPEND
-    179  f219		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    180  f21b					      REPEND
-    181  f21b
-    182  f21b		       a2 00		      ldx	#%00000000
-    183  f21d		       86 0d		      stx	PF0
-    184  f21f		       a2 10		      ldx	#%00010000
-    185  f221		       86 0e		      stx	PF1
-    186  f223		       a2 10		      ldx	#%00010000
-    187  f225		       86 0f		      stx	PF2
-    188  f227					      REPEAT	7
-    189  f227		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    188  f227					      REPEND
-    189  f229		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    188  f229					      REPEND
-    189  f22b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    188  f22b					      REPEND
-    189  f22d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    188  f22d					      REPEND
-    189  f22f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    188  f22f					      REPEND
-    189  f231		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    188  f231					      REPEND
-    189  f233		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    190  f235					      REPEND
-    191  f235
+    172  f19f
+    173  f19f		       a2 00		      ldx	#%00000000
+    174  f1a1		       86 0d		      stx	PF0
+    175  f1a3		       a2 10		      ldx	#%00010000
+    176  f1a5		       86 0e		      stx	PF1
+    177  f1a7		       a2 10		      ldx	#%00010000
+    178  f1a9		       86 0f		      stx	PF2
+    179  f1ab					      REPEAT	56
+    180  f1ab		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1ab					      REPEND
+    180  f1ad		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1ad					      REPEND
+    180  f1af		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1af					      REPEND
+    180  f1b1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1b1					      REPEND
+    180  f1b3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1b3					      REPEND
+    180  f1b5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1b5					      REPEND
+    180  f1b7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1b7					      REPEND
+    180  f1b9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1b9					      REPEND
+    180  f1bb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1bb					      REPEND
+    180  f1bd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1bd					      REPEND
+    180  f1bf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1bf					      REPEND
+    180  f1c1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1c1					      REPEND
+    180  f1c3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1c3					      REPEND
+    180  f1c5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1c5					      REPEND
+    180  f1c7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1c7					      REPEND
+    180  f1c9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1c9					      REPEND
+    180  f1cb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1cb					      REPEND
+    180  f1cd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1cd					      REPEND
+    180  f1cf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1cf					      REPEND
+    180  f1d1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1d1					      REPEND
+    180  f1d3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1d3					      REPEND
+    180  f1d5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1d5					      REPEND
+    180  f1d7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1d7					      REPEND
+    180  f1d9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1d9					      REPEND
+    180  f1db		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1db					      REPEND
+    180  f1dd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1dd					      REPEND
+    180  f1df		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1df					      REPEND
+    180  f1e1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1e1					      REPEND
+    180  f1e3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1e3					      REPEND
+    180  f1e5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1e5					      REPEND
+    180  f1e7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1e7					      REPEND
+    180  f1e9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1e9					      REPEND
+    180  f1eb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1eb					      REPEND
+    180  f1ed		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1ed					      REPEND
+    180  f1ef		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1ef					      REPEND
+    180  f1f1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1f1					      REPEND
+    180  f1f3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1f3					      REPEND
+    180  f1f5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1f5					      REPEND
+    180  f1f7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1f7					      REPEND
+    180  f1f9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1f9					      REPEND
+    180  f1fb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1fb					      REPEND
+    180  f1fd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1fd					      REPEND
+    180  f1ff		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f1ff					      REPEND
+    180  f201		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f201					      REPEND
+    180  f203		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f203					      REPEND
+    180  f205		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f205					      REPEND
+    180  f207		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f207					      REPEND
+    180  f209		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f209					      REPEND
+    180  f20b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f20b					      REPEND
+    180  f20d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f20d					      REPEND
+    180  f20f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f20f					      REPEND
+    180  f211		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f211					      REPEND
+    180  f213		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f213					      REPEND
+    180  f215		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f215					      REPEND
+    180  f217		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    179  f217					      REPEND
+    180  f219		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    181  f21b					      REPEND
+    182  f21b
+    183  f21b		       a2 00		      ldx	#%00000000
+    184  f21d		       86 0d		      stx	PF0
+    185  f21f		       a2 10		      ldx	#%00010000
+    186  f221		       86 0e		      stx	PF1
+    187  f223		       a2 10		      ldx	#%00010000
+    188  f225		       86 0f		      stx	PF2
+    189  f227					      REPEAT	7
+    190  f227		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    189  f227					      REPEND
+    190  f229		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    189  f229					      REPEND
+    190  f22b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    189  f22b					      REPEND
+    190  f22d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    189  f22d					      REPEND
+    190  f22f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    189  f22f					      REPEND
+    190  f231		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    189  f231					      REPEND
+    190  f233		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    191  f235					      REPEND
     192  f235
     193  f235
-    194  f235							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;    
-    195  f235		       a2 00		      ldx	#%00000000
-    196  f237		       86 0d		      stx	PF0
-    197  f239		       a2 1f		      ldx	#%00011111
-    198  f23b		       86 0e		      stx	PF1
-    199  f23d		       a2 ff		      ldx	#%11111111
-    200  f23f		       86 0f		      stx	PF2
-    201  f241					      REPEAT	7
-    202  f241		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    201  f241					      REPEND
-    202  f243		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    201  f243					      REPEND
-    202  f245		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    201  f245					      REPEND
-    202  f247		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    201  f247					      REPEND
-    202  f249		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    201  f249					      REPEND
-    202  f24b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    201  f24b					      REPEND
-    202  f24d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    203  f24f					      REPEND
-    204  f24f
-    205  f24f							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
-    206  f24f		       a2 00		      ldx	#%00000000
-    207  f251		       86 0d		      stx	PF0
-    208  f253		       a2 20		      ldx	#%00100000
-    209  f255		       86 0e		      stx	PF1
-    210  f257		       a2 00		      ldx	#%00000000
-    211  f259		       86 0f		      stx	PF2
-    212  f25b					      REPEAT	7
-    213  f25b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    212  f25b					      REPEND
-    213  f25d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    212  f25d					      REPEND
-    213  f25f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    212  f25f					      REPEND
-    213  f261		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    212  f261					      REPEND
-    213  f263		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    212  f263					      REPEND
-    213  f265		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    212  f265					      REPEND
-    213  f267		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    214  f269					      REPEND
-    215  f269
+    194  f235
+    195  f235							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;    
+    196  f235		       a2 00		      ldx	#%00000000
+    197  f237		       86 0d		      stx	PF0
+    198  f239		       a2 1f		      ldx	#%00011111
+    199  f23b		       86 0e		      stx	PF1
+    200  f23d		       a2 ff		      ldx	#%11111111
+    201  f23f		       86 0f		      stx	PF2
+    202  f241					      REPEAT	7
+    203  f241		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    202  f241					      REPEND
+    203  f243		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    202  f243					      REPEND
+    203  f245		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    202  f245					      REPEND
+    203  f247		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    202  f247					      REPEND
+    203  f249		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    202  f249					      REPEND
+    203  f24b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    202  f24b					      REPEND
+    203  f24d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    204  f24f					      REPEND
+    205  f24f
+    206  f24f							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+    207  f24f		       a2 00		      ldx	#%00000000
+    208  f251		       86 0d		      stx	PF0
+    209  f253		       a2 20		      ldx	#%00100000
+    210  f255		       86 0e		      stx	PF1
+    211  f257		       a2 00		      ldx	#%00000000
+    212  f259		       86 0f		      stx	PF2
+    213  f25b					      REPEAT	7
+    214  f25b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    213  f25b					      REPEND
+    214  f25d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    213  f25d					      REPEND
+    214  f25f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    213  f25f					      REPEND
+    214  f261		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    213  f261					      REPEND
+    214  f263		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    213  f263					      REPEND
+    214  f265		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    213  f265					      REPEND
+    214  f267		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    215  f269					      REPEND
     216  f269
-    217  f269		       a2 40		      ldx	#%01000000
-    218  f26b		       86 0e		      stx	PF1
-    219  f26d		       a2 00		      ldx	#%00000000
-    220  f26f		       86 0f		      stx	PF2
-    221  f271					      REPEAT	7
-    222  f271		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    221  f271					      REPEND
-    222  f273		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    221  f273					      REPEND
-    222  f275		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    221  f275					      REPEND
-    222  f277		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    221  f277					      REPEND
-    222  f279		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    221  f279					      REPEND
-    222  f27b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    221  f27b					      REPEND
-    222  f27d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    223  f27f					      REPEND
-    224  f27f
+    217  f269
+    218  f269		       a2 40		      ldx	#%01000000
+    219  f26b		       86 0e		      stx	PF1
+    220  f26d		       a2 00		      ldx	#%00000000
+    221  f26f		       86 0f		      stx	PF2
+    222  f271					      REPEAT	7
+    223  f271		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    222  f271					      REPEND
+    223  f273		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    222  f273					      REPEND
+    223  f275		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    222  f275					      REPEND
+    223  f277		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    222  f277					      REPEND
+    223  f279		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    222  f279					      REPEND
+    223  f27b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    222  f27b					      REPEND
+    223  f27d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    224  f27f					      REPEND
     225  f27f
-    226  f27f		       a2 80		      ldx	#%10000000
-    227  f281		       86 0e		      stx	PF1
-    228  f283		       a2 00		      ldx	#%00000000
-    229  f285		       86 0f		      stx	PF2
-    230  f287					      REPEAT	7
-    231  f287		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    230  f287					      REPEND
-    231  f289		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    230  f289					      REPEND
-    231  f28b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    230  f28b					      REPEND
-    231  f28d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    230  f28d					      REPEND
-    231  f28f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    230  f28f					      REPEND
-    231  f291		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    230  f291					      REPEND
-    231  f293		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    232  f295					      REPEND
-    233  f295
-    234  f295		       a2 80		      ldx	#%10000000
-    235  f297		       86 0d		      stx	PF0
-    236  f299		       a2 00		      ldx	#%00000000
-    237  f29b		       86 0e		      stx	PF1
-    238  f29d		       86 0f		      stx	PF2
-    239  f29f					      REPEAT	7
-    240  f29f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    239  f29f					      REPEND
-    240  f2a1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    239  f2a1					      REPEND
-    240  f2a3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    239  f2a3					      REPEND
-    240  f2a5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    239  f2a5					      REPEND
-    240  f2a7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    239  f2a7					      REPEND
-    240  f2a9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    239  f2a9					      REPEND
-    240  f2ab		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    241  f2ad					      REPEND
-    242  f2ad
-    243  f2ad		       a2 40		      ldx	#%01000000
-    244  f2af		       86 0d		      stx	PF0
-    245  f2b1		       a2 00		      ldx	#%00000000
-    246  f2b3		       86 0e		      stx	PF1
-    247  f2b5		       86 0f		      stx	PF2
-    248  f2b7					      REPEAT	7
-    249  f2b7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    248  f2b7					      REPEND
-    249  f2b9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    248  f2b9					      REPEND
-    249  f2bb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    248  f2bb					      REPEND
-    249  f2bd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    248  f2bd					      REPEND
-    249  f2bf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    248  f2bf					      REPEND
-    249  f2c1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    248  f2c1					      REPEND
-    249  f2c3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    250  f2c5					      REPEND
-    251  f2c5
-    252  f2c5		       a2 20		      ldx	#%00100000
-    253  f2c7		       86 0d		      stx	PF0
-    254  f2c9		       a2 00		      ldx	#%00000000
-    255  f2cb		       86 0e		      stx	PF1
-    256  f2cd		       86 0f		      stx	PF2
-    257  f2cf					      REPEAT	7
-    258  f2cf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    257  f2cf					      REPEND
-    258  f2d1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    257  f2d1					      REPEND
-    258  f2d3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    257  f2d3					      REPEND
-    258  f2d5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    257  f2d5					      REPEND
-    258  f2d7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    257  f2d7					      REPEND
-    258  f2d9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    257  f2d9					      REPEND
-    258  f2db		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    259  f2dd					      REPEND
-    260  f2dd
-    261  f2dd		       a2 10		      ldx	#%00010000
-    262  f2df		       86 0d		      stx	PF0
-    263  f2e1		       a2 00		      ldx	#%00000000
-    264  f2e3		       86 0e		      stx	PF1
-    265  f2e5		       86 0f		      stx	PF2
-    266  f2e7					      REPEAT	7
-    267  f2e7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    266  f2e7					      REPEND
-    267  f2e9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    266  f2e9					      REPEND
-    267  f2eb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    266  f2eb					      REPEND
-    267  f2ed		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    266  f2ed					      REPEND
-    267  f2ef		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    266  f2ef					      REPEND
-    267  f2f1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    266  f2f1					      REPEND
-    267  f2f3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
-    268  f2f5					      REPEND
-    269  f2f5
+    226  f27f
+    227  f27f		       a2 80		      ldx	#%10000000
+    228  f281		       86 0e		      stx	PF1
+    229  f283		       a2 00		      ldx	#%00000000
+    230  f285		       86 0f		      stx	PF2
+    231  f287					      REPEAT	7
+    232  f287		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    231  f287					      REPEND
+    232  f289		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    231  f289					      REPEND
+    232  f28b		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    231  f28b					      REPEND
+    232  f28d		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    231  f28d					      REPEND
+    232  f28f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    231  f28f					      REPEND
+    232  f291		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    231  f291					      REPEND
+    232  f293		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    233  f295					      REPEND
+    234  f295
+    235  f295		       a2 80		      ldx	#%10000000
+    236  f297		       86 0d		      stx	PF0
+    237  f299		       a2 00		      ldx	#%00000000
+    238  f29b		       86 0e		      stx	PF1
+    239  f29d		       86 0f		      stx	PF2
+    240  f29f					      REPEAT	7
+    241  f29f		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    240  f29f					      REPEND
+    241  f2a1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    240  f2a1					      REPEND
+    241  f2a3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    240  f2a3					      REPEND
+    241  f2a5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    240  f2a5					      REPEND
+    241  f2a7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    240  f2a7					      REPEND
+    241  f2a9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    240  f2a9					      REPEND
+    241  f2ab		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    242  f2ad					      REPEND
+    243  f2ad
+    244  f2ad		       a2 40		      ldx	#%01000000
+    245  f2af		       86 0d		      stx	PF0
+    246  f2b1		       a2 00		      ldx	#%00000000
+    247  f2b3		       86 0e		      stx	PF1
+    248  f2b5		       86 0f		      stx	PF2
+    249  f2b7					      REPEAT	7
+    250  f2b7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    249  f2b7					      REPEND
+    250  f2b9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    249  f2b9					      REPEND
+    250  f2bb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    249  f2bb					      REPEND
+    250  f2bd		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    249  f2bd					      REPEND
+    250  f2bf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    249  f2bf					      REPEND
+    250  f2c1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    249  f2c1					      REPEND
+    250  f2c3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    251  f2c5					      REPEND
+    252  f2c5
+    253  f2c5		       a2 20		      ldx	#%00100000
+    254  f2c7		       86 0d		      stx	PF0
+    255  f2c9		       a2 00		      ldx	#%00000000
+    256  f2cb		       86 0e		      stx	PF1
+    257  f2cd		       86 0f		      stx	PF2
+    258  f2cf					      REPEAT	7
+    259  f2cf		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    258  f2cf					      REPEND
+    259  f2d1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    258  f2d1					      REPEND
+    259  f2d3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    258  f2d3					      REPEND
+    259  f2d5		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    258  f2d5					      REPEND
+    259  f2d7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    258  f2d7					      REPEND
+    259  f2d9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    258  f2d9					      REPEND
+    259  f2db		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    260  f2dd					      REPEND
+    261  f2dd
+    262  f2dd		       a2 10		      ldx	#%00010000
+    263  f2df		       86 0d		      stx	PF0
+    264  f2e1		       a2 00		      ldx	#%00000000
+    265  f2e3		       86 0e		      stx	PF1
+    266  f2e5		       86 0f		      stx	PF2
+    267  f2e7					      REPEAT	7
+    268  f2e7		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    267  f2e7					      REPEND
+    268  f2e9		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    267  f2e9					      REPEND
+    268  f2eb		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    267  f2eb					      REPEND
+    268  f2ed		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    267  f2ed					      REPEND
+    268  f2ef		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    267  f2ef					      REPEND
+    268  f2f1		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    267  f2f1					      REPEND
+    268  f2f3		       85 02		      sta	WSYNC	; repeat PF config for 7 scanlines
+    269  f2f5					      REPEND
     270  f2f5
-    271  f2f5							; Skip 7 vertical lines with no PF set
-    272  f2f5		       a2 00		      ldx	#0
-    273  f2f7		       86 0d		      stx	PF0
-    274  f2f9		       86 0e		      stx	PF1
-    275  f2fb		       86 0f		      stx	PF2
-    276  f2fd					      REPEAT	5
-    277  f2fd		       85 02		      sta	WSYNC
-    276  f2fd					      REPEND
-    277  f2ff		       85 02		      sta	WSYNC
-    276  f2ff					      REPEND
-    277  f301		       85 02		      sta	WSYNC
-    276  f301					      REPEND
-    277  f303		       85 02		      sta	WSYNC
-    276  f303					      REPEND
-    277  f305		       85 02		      sta	WSYNC
-    278  f307					      REPEND
-    279  f307
-    280  f307							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    281  f307							;; Output 30 more VBLANK overscan lines to complete our frame
-    282  f307							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    283  f307		       a9 02		      lda	#2
-    284  f309		       85 01		      sta	VBLANK	; enable VBLANK back again
-    285  f30b					      REPEAT	30
-    286  f30b		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f30b					      REPEND
-    286  f30d		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f30d					      REPEND
-    286  f30f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f30f					      REPEND
-    286  f311		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f311					      REPEND
-    286  f313		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f313					      REPEND
-    286  f315		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f315					      REPEND
-    286  f317		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f317					      REPEND
-    286  f319		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f319					      REPEND
-    286  f31b		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f31b					      REPEND
-    286  f31d		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f31d					      REPEND
-    286  f31f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f31f					      REPEND
-    286  f321		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f321					      REPEND
-    286  f323		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f323					      REPEND
-    286  f325		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f325					      REPEND
-    286  f327		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f327					      REPEND
-    286  f329		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f329					      REPEND
-    286  f32b		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f32b					      REPEND
-    286  f32d		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f32d					      REPEND
-    286  f32f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f32f					      REPEND
-    286  f331		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f331					      REPEND
-    286  f333		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f333					      REPEND
-    286  f335		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f335					      REPEND
-    286  f337		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f337					      REPEND
-    286  f339		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f339					      REPEND
-    286  f33b		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f33b					      REPEND
-    286  f33d		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f33d					      REPEND
-    286  f33f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f33f					      REPEND
-    286  f341		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f341					      REPEND
-    286  f343		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    285  f343					      REPEND
-    286  f345		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
-    287  f347					      REPEND
-    288  f347
-    289  f347							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    290  f347							;; Loop to next frame
-    291  f347							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    292  f347		       4c 13 f0 	      jmp	StartFrame
-    293  f34a
-    294  f34a							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    295  f34a							;; Complete ROM size
-    296  f34a							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    297  fffc					      org	$fffc
-    298  fffc		       00 f0		      .word.w	Reset
-    299  fffe		       00 f0		      .word.w	Reset
+    271  f2f5							;208
+    272  f2f5							; Skip 7 vertical lines with no PF set
+    273  f2f5		       a2 00		      ldx	#0
+    274  f2f7		       86 0d		      stx	PF0
+    275  f2f9		       86 0e		      stx	PF1
+    276  f2fb		       86 0f		      stx	PF2
+    277  f2fd					      REPEAT	7
+    278  f2fd		       85 02		      sta	WSYNC
+    277  f2fd					      REPEND
+    278  f2ff		       85 02		      sta	WSYNC
+    277  f2ff					      REPEND
+    278  f301		       85 02		      sta	WSYNC
+    277  f301					      REPEND
+    278  f303		       85 02		      sta	WSYNC
+    277  f303					      REPEND
+    278  f305		       85 02		      sta	WSYNC
+    277  f305					      REPEND
+    278  f307		       85 02		      sta	WSYNC
+    277  f307					      REPEND
+    278  f309		       85 02		      sta	WSYNC
+    279  f30b					      REPEND
+    280  f30b
+    281  f30b							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    282  f30b							;; Output 30 more VBLANK overscan lines to complete our frame
+    283  f30b							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    284  f30b		       a9 02		      lda	#2
+    285  f30d		       85 01		      sta	VBLANK	; enable VBLANK back again
+    286  f30f					      REPEAT	30
+    287  f30f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f30f					      REPEND
+    287  f311		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f311					      REPEND
+    287  f313		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f313					      REPEND
+    287  f315		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f315					      REPEND
+    287  f317		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f317					      REPEND
+    287  f319		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f319					      REPEND
+    287  f31b		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f31b					      REPEND
+    287  f31d		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f31d					      REPEND
+    287  f31f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f31f					      REPEND
+    287  f321		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f321					      REPEND
+    287  f323		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f323					      REPEND
+    287  f325		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f325					      REPEND
+    287  f327		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f327					      REPEND
+    287  f329		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f329					      REPEND
+    287  f32b		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f32b					      REPEND
+    287  f32d		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f32d					      REPEND
+    287  f32f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f32f					      REPEND
+    287  f331		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f331					      REPEND
+    287  f333		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f333					      REPEND
+    287  f335		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f335					      REPEND
+    287  f337		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f337					      REPEND
+    287  f339		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f339					      REPEND
+    287  f33b		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f33b					      REPEND
+    287  f33d		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f33d					      REPEND
+    287  f33f		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f33f					      REPEND
+    287  f341		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f341					      REPEND
+    287  f343		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f343					      REPEND
+    287  f345		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f345					      REPEND
+    287  f347		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    286  f347					      REPEND
+    287  f349		       85 02		      sta	WSYNC	; output the 30 recommended overscan lines
+    288  f34b					      REPEND
+    289  f34b
+    290  f34b							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    291  f34b							;; Loop to next frame
+    292  f34b							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    293  f34b		       4c 13 f0 	      jmp	StartFrame
+    294  f34e
+    295  f34e							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    296  f34e							;; Complete ROM size
+    297  f34e							;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    298  fffc					      org	$fffc
+    299  fffc		       00 f0		      .word.w	Reset
+    300  fffe		       00 f0		      .word.w	Reset

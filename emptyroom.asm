@@ -58,12 +58,12 @@ StartFrame:
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Draw the 192 visible scanlines
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; Skip 7 scanlines with no PF set
+    ; Skip 3 scanlines with no PF set
     ldx #0
     stx PF0
     stx PF1
     stx PF2
-    REPEAT 5
+    REPEAT 3
         sta WSYNC
     REPEND
 
@@ -146,17 +146,16 @@ StartFrame:
     REPEAT 7
        sta WSYNC   ; repeat PF config for 7 scanlines
     REPEND
-    
+    ;56
     ldx #%00000000
     stx PF0
     ldx #%00010000
     stx PF1
     ldx #%00000000
     stx PF2
-    REPEAT 91
+    REPEAT 77
        sta WSYNC   ; repeat PF config for 7 scanlines
     REPEND
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;    
     ldx #%00000000
     stx PF0
@@ -233,15 +232,6 @@ StartFrame:
        sta WSYNC   ; repeat PF config for 7 scanlines
     REPEND 
 
-
-    ; Skip 7 vertical lines with no PF set
-    ldx #0
-    stx PF0
-    stx PF1
-    stx PF2
-    REPEAT 5
-        sta WSYNC
-    REPEND
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Output 30 more VBLANK overscan lines to complete our frame
